@@ -315,6 +315,10 @@ pre {
   font-weight: bold;
 }
 
+.innpic figcaption {
+  font-size: 9pt;
+}
+
 .innpic figcaption sub {
   vertical-align: bottom;
 }
