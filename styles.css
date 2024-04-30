@@ -1,0 +1,348 @@
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar,::-webkit-scrollbar-button:horizontal:start,::-webkit-scrollbar-button:horizontal:end {
+    width: 16px;
+}
+
+::-webkit-scrollbar:horizontal,::-webkit-scrollbar-button:vertical:start,::-webkit-scrollbar-button:vertical:end {
+    height: 17px
+}
+
+::-webkit-scrollbar-thumb,::-webkit-scrollbar-corner,::-webkit-scrollbar-button {
+    background: silver;
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset -1px -1px #000,inset 1px 1px silver,inset -2px -2px gray,inset 2px 2px #fff;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment,::-webkit-scrollbar-button:horizontal:start:decrement,::-webkit-scrollbar-button:vertical:end:increment,::-webkit-scrollbar-button:vertical:start:decrement {
+    display: block;
+}
+
+::-webkit-scrollbar-track {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='2' height='2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1 0H0v1h1v1h1V1H1V0z' fill='%23ilver'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2 0H1v1H0v1h1V1h1V0z' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+::-webkit-scrollbar-button:vertical:start {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 0H0v16h1V1h14V0z' fill='%23ilver'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2 1H1v14h1V2h12V1H2z' fill='%23fff'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 17H0v-1h15V0h1v17z' fill='%23000'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 1h-1v14H1v1h14V1z' fill='gray'/%3E%3Cpath fill='$control' d='M2 2h12v13H2z'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8 6H7v1H6v1H5v1H4v1h7V9h-1V8H9V7H8V6z' fill='%23000'/%3E%3C/svg%3E");
+}
+
+::-webkit-scrollbar-button:vertical:end {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 0H0v16h1V1h14V0z' fill='%23ilver'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2 1H1v14h1V2h12V1H2z' fill='%23fff'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 17H0v-1h15V0h1v17z' fill='%23000'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 1h-1v14H1v1h14V1z' fill='gray'/%3E%3Cpath fill='$control' d='M2 2h12v13H2z'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11 6H4v1h1v1h1v1h1v1h1V9h1V8h1V7h1V6z' fill='%23000'/%3E%3C/svg%3E");
+}
+
+::-webkit-scrollbar-button:horizontal:start {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 0H0v16h1V1h14V0z' fill='%23ilver'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2 1H1v14h1V2h12V1H2z' fill='%23fff'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 17H0v-1h15V0h1v17z' fill='%23000'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 1h-1v14H1v1h14V1z' fill='gray'/%3E%3Cpath fill='$control' d='M2 2h12v13H2z'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 4H8v1H7v1H6v1H5v1h1v1h1v1h1v1h1V4z' fill='%23000'/%3E%3C/svg%3E");
+}
+
+::-webkit-scrollbar-button:horizontal:end {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='16' height='17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 0H0v16h1V1h14V0z' fill='%23ilver'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2 1H1v14h1V2h12V1H2z' fill='%23fff'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 17H0v-1h15V0h1v17z' fill='%23000'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 1h-1v14H1v1h14V1z' fill='gray'/%3E%3Cpath fill='$control' d='M2 2h12v13H2z'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7 4H6v7h1v-1h1V9h1V8h1V7H9V6H8V5H7V4z' fill='%23000'/%3E%3C/svg%3E");
+}
+
+body {
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: grayscale;
+  font-family: "MS Sans Serif",simsun, simhei, dengxian, sans-serif;
+  font-size: 8pt;
+  color: #000;
+  margin: 0;
+  zoom: 125%;
+  /*background-color: #3A6EA5;*/
+}
+
+a, a:hover, a:active, a:visited {
+  color: blue;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: 'Arial', sans-serif
+}
+
+h1 {
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 12pt;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 12pt;
+    font-weight: normal;
+}
+
+vr {
+  border-left: 1px solid gray;
+  border-right: 1px solid #fff;
+  margin: 2px 3px;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #7f7f7f;
+    border-bottom: 1px solid #fff;
+}
+
+sup, sub {
+  font-size: 85%;
+  position: relative;
+}
+
+sup {
+  vertical-align: top;
+  top: -4px;
+}
+
+sub {
+  vertical-align: bottom;
+  bottom: -4px;
+}
+
+rt {
+  font-family: helvetica, arial, sans-serif;
+  font-style: normal;
+  letter-spacing: 0;
+}
+  
+abbr {
+  cursor: help;
+}
+
+dfn {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+pre {
+  font: 10pt/1.185 'dejavu sans mono', menlo, consolas, simsun, simhei, dengxian, serif;
+  white-space: pre;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.text-alert {
+  color: red;
+}
+
+.balloon {
+    background-color: #ffffe1;
+    border: black 1px solid;
+    border-radius: 8px;
+    padding: 9px 12px;
+    margin-block-start:1em;margin-block-end:1em}
+
+.balloon-header {
+    display: flex;
+    margin-bottom: 8px
+}
+
+.balloon-title {
+    font-weight: bold
+}
+
+.balloon-icon {
+    margin-right: 9px
+}
+
+.container {
+}
+
+.window {
+    /*box-shadow: inset -1px -1px #000,inset 1px 1px silver,inset -2px -2px gray,inset 2px 2px #fff;*/
+    font-size: 11px;
+    background: silver;
+}
+
+.title-bar {
+    font-size: 11px;
+    background: linear-gradient(90deg, navy, #1084d0);
+    padding: 3px 2px 3px 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-bar-text {
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 0;
+    margin-right: 24px;
+}
+
+.window-body {
+}
+
+.navigation-icons {
+    display: flex;
+    padding: 2px;
+}
+
+.navigation-icons a,
+.navigation-icons a:link {
+    color: #000!important;
+    text-decoration: none;
+}
+
+.navigation-icon {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: 50px;
+    min-height: 36px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.navigation-icon:hover {
+    box-shadow: inset -1px -1px #000,inset 1px 1px #fff;
+}
+
+.navigation-icon:active {
+    box-shadow: inset -1px -1px #fff,inset 1px 1px gray;
+}
+
+.navigation-icon img {
+    image-rendering: crisp-edges;
+    width: 16px;
+    height: 16px;
+    margin: 0 auto 4px auto;
+}
+
+.navigation-icon:not(:hover) img {
+    filter: grayscale(1);
+}
+
+.inset {
+    border: none;
+    margin: 0;
+    background: #fff;
+}
+
+.document {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10pt;
+
+    .document-content {
+        padding: 10px;
+    }
+}
+
+.collapse {
+  display: inline;
+  
+  .collapse-toggler {
+    cursor: pointer;
+    color: blue;
+    text-decoration: none;
+    &.active {
+      font-weight: bold;
+    }
+    
+    + abbr {
+      font-size: 85%;
+    }
+  }
+  
+  .collapse-body {
+    display: none/* inline */;
+    &.active {
+      display: inline;
+    }
+  }
+}
+
+.tofu {
+}
+
+.flex-figure {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  .figure {
+    margin: 0;
+  }
+}
+
+.figure {
+  margin: 1em;
+}
+
+figure img {
+  width: 200px;
+  max-width: 100%;
+}
+
+.gallery-open-btn {
+  color: blue;
+  margin-left: 2px;
+  border-bottom: 1px dotted;
+  position: relative;
+  cursor: pointer;
+}
+
+.buddha {
+  letter-spacing: -0.0325em;
+  padding: 10px;
+
+  button {
+    display: inline-block;
+    color: blue;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px dotted;
+    cursor: pointer;
+  }
+}
+
+.innpic .sold em {
+  color: red;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.innpic figcaption sub {
+  vertical-align: bottom;
+}
+
+.innpic .arrow {
+  font-size: 85%;
+  margin-right: 2px;
+  position: relative;
+  top: -1px;
+}
+
+.bottomborder2px-red {
+  display: inline-block;
+  border-bottom: 2px solid red;
+}
+
+.bottomborder4px-green {
+  color: green;
+  border-bottom: 4px solid green;
+}
+
+.bottomborder4px-red {
+  color: red;
+  border-bottom: 4px solid red;
+}
+
+@media screen and (max-width: 601px) {
+    body {
+        zoom: 110%;
+    }
+}
