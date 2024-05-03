@@ -271,6 +271,7 @@ pre {
 
 .document-content {
   padding: 10px;
+  max-width: 750px;
 }
 
 .flex-figure {
